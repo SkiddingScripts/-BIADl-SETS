@@ -131,7 +131,7 @@ end]]--
 
 Uis.InputBegan:Connect(function(input)
 	if not (Uis:GetFocusedTextBox()) then 
-		if input.KeyCode == Enum.KeyCode.E then 
+		if input.KeyCode == Enum.KeyCode.P then 
 			pcall(function()
 				if MousePressed ~= true then MousePressed = true end 
 				local Target;Target = GetNearestTarget()
@@ -149,7 +149,7 @@ Uis.InputBegan:Connect(function(input)
 end)
 Uis.InputEnded:Connect(function(input)
 	if not (Uis:GetFocusedTextBox()) then 
-		if input.KeyCode == Enum.KeyCode.E then 
+		if input.KeyCode == Enum.KeyCode.P then 
 			if AimlockTarget ~= nil then AimlockTarget = nil end
 			if MousePressed ~= false then 
 				MousePressed = false 
